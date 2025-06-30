@@ -7,7 +7,10 @@ import threading
 import os
 import pytz
 import time as _time
+import signal
+import subprocess
 from datetime import datetime
+from pathlib import Path
 from config import (
     tickers_path,
     refresh_token_link_path,
@@ -19,6 +22,7 @@ from config import (
 from utils import *
 from schwab import create_header, get_refresh_token
 from tastytrade import get_instruments, generate_access_token_for_tastytrade
+import sys
 
 # ----------------------------------------
 # Streamlit Page Configuration
@@ -59,6 +63,9 @@ if "bot_status" not in st.session_state:
 
 if "last_refresh" not in st.session_state:
     st.session_state.last_refresh = None
+
+if "strategy_status" not in st.session_state:
+    st.session_state.strategy_status = "Stopped"
 
 # ----------------------------------------
 # Helper Functions
@@ -181,6 +188,142 @@ def get_current_trades():
     return trades
 
 
+def stop_strategy_processes():
+    """
+    Stops all strategy-related processes (tick_producer.py and strategy_consumer.py).
+    Returns (bool, str) for success status and message.
+    """
+    try:
+        def stop_process(process_name):
+            """Stops all processes with the given script name."""
+            try:
+                result = subprocess.run(
+                    ["pgrep", "-f", process_name],
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    text=True
+                )
+                pids = result.stdout.strip().split("\n")
+
+                if not pids or pids == ['']:
+                    print(f"No running processes found for {process_name}.")
+                    return 0
+
+                terminated_count = 0
+                for pid in pids:
+                    try:
+                        print(f"Terminating {process_name} (PID: {pid})")
+                        os.kill(int(pid), signal.SIGTERM)
+                        terminated_count += 1
+                    except Exception as e:
+                        print(f"Failed to terminate PID {pid}: {e}")
+                
+                return terminated_count
+            except Exception as e:
+                print(f"Error while searching for {process_name}: {e}")
+                return 0
+
+        # Stop both processes
+        tick_producer_count = stop_process("tick_producer.py")
+        strategy_consumer_count = stop_process("strategy_consumer.py")
+        
+        total_terminated = tick_producer_count + strategy_consumer_count
+        
+        if total_terminated > 0:
+            st.session_state.strategy_status = "Stopped"
+            return True, ""
+        else:
+            return True, ""
+            
+    except Exception as e:
+        return False, f"Error stopping strategy processes: {str(e)}"
+
+
+def start_strategy_processes():
+    """
+    Starts the strategy processes by running process_launcher.py.
+    Returns (bool, str) for success status and message.
+    """
+    try:
+        base_dir = Path(__file__).parent.resolve()
+        process_launcher_path = base_dir / "process_launcher.py"
+        
+        if not process_launcher_path.exists():
+            return False, f"process_launcher.py not found at {process_launcher_path}"
+        
+        # Start process_launcher.py as a background process
+        process = subprocess.Popen(
+            [sys.executable, str(process_launcher_path)],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            start_new_session=True  # This detaches the process from the current session
+        )
+        
+        st.session_state.strategy_status = "Running"
+        return True, f"Strategy processes started successfully (PID: {process.pid})"
+        
+    except Exception as e:
+        return False, f"Error starting strategy processes: {str(e)}"
+
+
+def restart_strategy():
+    """
+    Restarts the strategy by stopping current processes and starting new ones.
+    Returns (bool, str) for success status and message.
+    """
+    # First stop existing processes
+    stop_success, stop_msg = stop_strategy_processes()
+    if not stop_success:
+        return False, f"Failed to stop processes: {stop_msg}"
+    
+    # Wait a moment for processes to fully terminate
+    _time.sleep(2)
+    
+    # Start new processes
+    start_success, start_msg = start_strategy_processes()
+    if not start_success:
+        return False, f"Failed to start processes: {start_msg}"
+    
+    return True, f""
+
+
+def check_strategy_status():
+    """
+    Check if strategy processes are currently running.
+    Updates st.session_state.strategy_status.
+    """
+    try:
+        # Check for tick_producer.py
+        result_producer = subprocess.run(
+            ["pgrep", "-f", "tick_producer.py"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
+        )
+        
+        # Check for strategy_consumer.py
+        result_consumer = subprocess.run(
+            ["pgrep", "-f", "strategy_consumer.py"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
+        )
+        
+        producer_running = bool(result_producer.stdout.strip())
+        consumer_running = bool(result_consumer.stdout.strip())
+        
+        if producer_running and consumer_running:
+            st.session_state.strategy_status = "Running"
+        elif producer_running or consumer_running:
+            st.session_state.strategy_status = "Partial"
+        else:
+            st.session_state.strategy_status = "Stopped"
+            
+    except Exception as e:
+        print(f"Error checking strategy status: {e}")
+        st.session_state.strategy_status = "Unknown"
+
+
 # ----------------------------------------
 # New Scheduled Jobs
 # ----------------------------------------
@@ -202,7 +345,6 @@ def scheduled_reload_tickers():
         print(f"[Scheduled] Error reloading tickers.json: {str(e)}")
 
 
-
 def scheduled_validate_refresh_link():
     try:
         # Use a safe variable, not session_state
@@ -218,7 +360,6 @@ def scheduled_validate_refresh_link():
             print(f"[{now}] Refresh link valid? {is_valid}")
     except Exception as e:
         print(f"[Scheduled] Error validating refresh link: {str(e)}")
-
 
 
 # ----------------------------------------
@@ -245,6 +386,9 @@ def start_background_scheduler():
     # Every 5 seconds: validate the stored refresh‐token link
     schedule.every(5).seconds.do(scheduled_validate_refresh_link)
 
+    # Every 30 seconds: check strategy status
+    schedule.every(30).seconds.do(check_strategy_status)
+
     def run_scheduler_loop():
         while True:
             schedule.run_pending()
@@ -270,29 +414,42 @@ if "scheduler_started" not in st.session_state:
 # Sidebar: Bot Control & Token Management
 # ----------------------------------------
 with st.sidebar:
-    st.header("Bot Status")
-
-    # # Start/Stop buttons
-    # col_start, col_stop = st.columns(2)
-    # with col_start:
-    #     if st.button("Start Bot", type="primary",disabled=False):
-    #         set_bot_status("Running")
-    #         st.session_state.bot_status = "Running"
-    #         st.success("Bot started!")
-    # with col_stop:
-    #     if st.button("Stop Bot", type="secondary",disabled=False):
-    #         set_bot_status("Stopped")
-    #         st.session_state.bot_status = "Stopped"
-    #         st.warning("Bot stopped!")
-
-    # # Display bot running state
-    # if st.session_state.bot_status == "Running":
-    #     st.success("🟢 Bot is Running")
+    st.header("Strategy Control")
+    
+    # Check current strategy status
+    check_strategy_status()
+    
+    # # Display strategy status
+    # if st.session_state.strategy_status == "Running":
+    #     st.success("🟢 Strategy is Running")
+    # elif st.session_state.strategy_status == "Partial":
+    #     st.warning("🟡 Strategy Partially Running")
+    # elif st.session_state.strategy_status == "Stopped":
+    #     st.error("🔴 Strategy is Stopped")
     # else:
-    #     st.error("🔴 Bot is Stopped")
-    # st.divider()
+    #     st.info("❓ Strategy Status Unknown")
+    
+    # Strategy control buttons
+    col_stop, col_restart,col_start = st.columns(3)
+    
+    # with col_start:
+    #     if st.button("▶️ Start", type="primary", help="Start strategy processes"):
+    #         success, message = start_strategy_processes()
+    #         if success:
+    #             st.success(message)
+    #         else:
+    #             st.error(message)
+    
+    with col_stop:
+        if st.button("⏹️ Stop", type="secondary", help="Stop strategy processes"):
+            stop_strategy_processes()
 
-    # Token Management Section
+    with col_restart:
+        if st.button(" Restart", type="primary", help="Restart strategy processes"):
+            restart_strategy()
+    
+    st.divider()
+
     st.header("Token Management")
 
     # Last refresh time (manually triggered or scheduled)
@@ -332,7 +489,6 @@ with st.sidebar:
 st.title("🚀 Trading Bot Control Panel")
 
 tab1, tab2 = st.tabs(
-    # ["📊 Trading Parameters", "🔗 Token Links", "📈 Active Trades", "📋 Logs"]
     ["📊 Trading Parameters", "🔗 Token Links"]
 )
 
@@ -414,8 +570,6 @@ with tab1:
                 if save_tickers_data():
                     st.success(f"✅ Added {new_ticker} successfully!")
                     st.rerun()
-
-
 
     # Display & edit existing tickers
     if st.session_state.tickers_data:
@@ -575,78 +729,23 @@ with tab2:
     else:
         st.warning("No refresh token link configured")
 
-# ---------------------------
-# Tab 3: Active Trades
-# ---------------------------
-# with tab3:
-#     st.header("Active Trades")
-
-#     if st.button("🔄 Refresh Trades"):
-#         st.rerun()
-
-#     current_trades = get_current_trades()
-
-#     if current_trades:
-#         for ticker, trade_info in current_trades.items():
-#             with st.container():
-#                 col1, col2, col3 = st.columns([2, 2, 3])
-
-#                 with col1:
-#                     st.subheader(f"📊 {ticker}")
-
-#                 with col2:
-#                     action = trade_info.get("action", "Unknown")
-#                     if action == "LONG":
-#                         st.success(f"🟢 {action}")
-#                     elif action == "SHORT":
-#                         st.error(f"🔴 {action}")
-#                     else:
-#                         st.info(f"⚪ {action}")
-
-#                 with col3:
-#                     schwab_order = trade_info.get("order_id_schwab", "N/A")
-#                     tasty_order = trade_info.get("order_id_tastytrade", "N/A")
-#                     st.text(f"Schwab Order ID: {schwab_order}")
-#                     st.text(f"Tastytrade Order ID: {tasty_order}")
-
-#                 st.divider()
-#     else:
-#         st.info("No active trades found")
-
-# ---------------------------
-# Tab 4: System Logs
-# ---------------------------
-# with tab4:
-#     st.header("System Logs")
-
-#     log_level = st.selectbox("Log Level", ["INFO", "WARNING", "ERROR", "DEBUG"])
-#     auto_refresh = st.checkbox("Auto-refresh logs (every 5 seconds)")
-
-#     if st.button("🔄 Refresh Logs"):
-#         st.rerun()
-
-#     log_container = st.container()
-#     with log_container:
-#         # TODO: Replace sample logs with actual log file reading logic
-#         sample_logs = [
-#             f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {log_level}: Bot status: {st.session_state.bot_status}",
-#             f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {log_level}: {len(st.session_state.tickers_data)} tickers configured",
-#             f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {log_level}: Token last refreshed: {st.session_state.last_refresh or 'Never'}",
-#         ]
-#         for log in sample_logs:
-#             st.text(log)
-
-#     if auto_refresh:
-#         _time.sleep(5)
-#         st.rerun()
-
 # ----------------------------------------
 # Footer & Real-time Status Placeholder
 # ----------------------------------------
 st.divider()
 st.caption("Trading Bot Control Panel - Built with Streamlit")
 
-if st.session_state.bot_status == "Running":
-    placeholder = st.empty()
-    with placeholder.container():
-        st.info(f"🔄 Bot running... Last update: {datetime.now().strftime('%H:%M:%S')}")
+# Real-time status display
+status_placeholder = st.empty()
+with status_placeholder.container():
+    col1, col2 = st.columns(2)
+    with col1:
+        if st.session_state.strategy_status == "Running":
+            st.info(f"🔄 Strategy running... Last update: {datetime.now().strftime('%H:%M:%S')}")
+        elif st.session_state.strategy_status == "Partial":
+            st.warning(f"⚠️ Strategy partially running... Last update: {datetime.now().strftime('%H:%M:%S')}")
+        else:
+            st.error(f"⏹️ Strategy stopped... Last update: {datetime.now().strftime('%H:%M:%S')}")
+    
+    with col2:
+        st.info(f"📊 {len(st.session_state.tickers_data)} tickers configured")

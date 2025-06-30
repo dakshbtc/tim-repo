@@ -31,7 +31,7 @@ def main():
         processes.append((p1, f1))
 
         # Give TickProducer time to initialize
-        # time.sleep(30)  # <—— Add delay here
+        time.sleep(30)  # <—— Add delay here
 
         # Start StrategyConsumer
         strategy_script = base_dir / "strategy_consumer.py"
