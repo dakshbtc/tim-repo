@@ -381,24 +381,21 @@ Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'er
 2025-07-01 03:18:56.448 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:19:26.723 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:19:26.723 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-07-01 03:18:09.974 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-07-01 03:18:09.974 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-07-01 03:18:40.651 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-07-01 03:18:40.652 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-07-01 03:19:11.602 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-07-01 03:19:11.602 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:19:57.333 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:19:57.333 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:27.687 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:27.688 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:57.928 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:57.928 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:19:41.961 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:19:41.961 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-alid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:40:58] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:41:08] Refresh link valid? False
-E2025-07-01 03:13:00.872 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-07-01 03:13:00.872 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-07-01 03:13:32.183 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-07-01 03:13:32.183 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-
-[2025-06-30 17:38:08] Refresh link valid? False
+2025-07-01 03:20:13.183 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:13.183 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:45.320 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:45.321 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:21:17.372 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:21:17.372 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+sh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
 [2025-06-30 17:38:14] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
@@ -625,29 +622,22 @@ Error in getting re2025-07-01 03:19:11.600 Thread 'Thread-4 (run_scheduler_loop)
 2025-07-01 03:19:11.600 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:19:42.864 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:19:42.864 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-
-[2025-06-30 17:47:18] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:25] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:26] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:31] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+2025-07-01 03:20:12.982 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:12.982 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:50.369 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:50.369 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+en' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
 [2025-06-30 17:47:32] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
 [2025-06-30 17:472025-07-01 03:19:11.589 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:19:11.589 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:19:42.577 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:19:42.577 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-alid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:51] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:51] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:57] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:57] Refresh link valid? False
+2025-07-01 03:20:13.502 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:13.502 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:50.162 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:50.162 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+alse
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
 [2025-06-30 17:48:08] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
@@ -682,18 +672,13 @@ Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'er
 2025-07-01 03:19:20.950 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:19:51.792 Thread 'Thread-7 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:19:51.792 Thread 'Thread-7 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
- 17:45:10] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:16] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:23] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:29] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:34] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:41] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+2025-07-01 03:20:22.302 Thread 'Thread-7 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:22.302 Thread 'Thread-7 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:52.366 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:52.366 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:52.366 Thread 'Thread-7 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:52.366 Thread 'Thread-7 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+h token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
 [2025-06-30 17:45:48] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
 [2025-06-30 17:45:54] Refresh link valid? False
@@ -767,107 +752,109 @@ Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'er
 [2025-06-30 17:44:42] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
 [2025-06-30 17:44:42] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_descriptio
+[2025-06-30 17:44:51] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:43] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:43] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:43] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:43] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:49] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:49] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:49] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:55] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:56] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:56] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:56] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:56] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:56] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:02] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:02] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:03] Refresh link valid? False
+[2025-06-30 17:44:57] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
 [2025-06-30 17:45:03] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
 [2025-06-30 17:45:09] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:09] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:09] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:09] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:09] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:10] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
 [2025-06-30 17:45:17] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:17] Refresh link valid? False
+[2025-06-30 17:45:23] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:17] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:17] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:17] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:17] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:24] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:28] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:28] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:28] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:28] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:28] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:34] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:34] Refresh link valid? False
+[2025-06-30 17:45:29] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
 [2025-06-30 17:45:34] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
 [2025-06-30 17:45:41] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:41] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:41] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:41] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:41] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:41] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
 [2025-06-30 17:45:47] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:47] Refresh link valid? False
+[2025-06-30 17:45:55] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:47] Refresh link valid? False
+[2025-06-30 17:46:01] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:48] Refresh link valid? False
+[2025-06-30 17:46:07] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:48] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}2025-07-01 03:15:59.810 Thread 'Thread-8 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-07-01 03:15:59.811 Thread 'Thread-8 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-2025-07-01 03:15:59.829 Thread 'Thread-24 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+[2025-06-30 17:46:13] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:46:20] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:46:26] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:46:32] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:46:38] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:46:44] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:46:51] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:46:59] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:47:06] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:47:12] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:47:18] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:47:25] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:47:31] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:47:37] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:47:44] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:47:50] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:47:56] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:02] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:08] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:15] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:21] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:27] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:34] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:40] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:46] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:52] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:58] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:04] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:10] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:16] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:22] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:28] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:34] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:40] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:46] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:53] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:59] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:05] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}5:59.829 Thread 'Thread-24 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:15:59.829 Thread 'Thread-15 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:15:59.829 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:15:59.829 Thread 'Thread-24 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
@@ -1198,122 +1185,117 @@ Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'er
 2025-07-01 03:19:32.943 Thread 'Thread-18 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:19:32.971 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 2025-07-01 03:19:32.971 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-rror': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:48:27] Refresh link valid? False
+2025-07-01 03:20:03.061 Thread 'Thread-21 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:03.062 Thread 'Thread-21 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+
+[2025-06-30 17:49:12] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:48:34] Refresh link valid? False
+[2025-06-30 17:49:12] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:48:40] Refresh link valid? False
+[2025-06-30 17:49:17] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:48:46] Refresh link valid? False
+[2025-06-30 17:49:18] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:48:52] Refresh link valid? False
+[2025-06-30 17:49:18] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:48:58] Refresh link valid? False
+[2025-06-30 17:49:18] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:49:04] Refresh link valid? False
+[2025-06-30 17:49:18] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:49:10] Refresh link valid? False
+[2025-06-30 17:49:24] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:20] Refresh link valid? False
+[2025-06-30 17:49:25] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:26] Refresh link valid? False
+[2025-06-30 17:49:25] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:33] Refresh link valid? False
+[2025-06-30 17:49:25] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:39] Refresh link valid? False
+[2025-06-30 17:49:25] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:45] Refresh link valid? False
+[2025-06-30 17:49:25] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:51] Refresh link valid? False
+[2025-06-30 17:49:31] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:44:57] Refresh link valid? False
+[2025-06-30 17:49:31] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:03] Refresh link valid? False
+[2025-06-30 17:49:32] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:09] Refresh link valid? False
+[2025-06-30 17:49:32] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:17] Refresh link valid? False
+[2025-06-30 17:49:33] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:23] Refresh link valid? False
+[2025-06-30 17:49:33] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:29] Refresh link valid? False
+[2025-06-30 17:49:39] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:35] Refresh link valid? False
+[2025-06-30 17:49:40] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:41] Refresh link valid? False
+[2025-06-30 17:49:40] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:47] Refresh link valid? False
+[2025-06-30 17:49:40] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:45:55] Refresh link valid? False
+[2025-06-30 17:49:40] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:46:01] Refresh link valid? False
+[2025-06-30 17:49:40] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:46:07] Refresh link valid? False
+[2025-06-30 17:49:46] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:46:13] Refresh link valid? False
+[2025-06-30 17:49:46] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:46:20] Refresh link valid? False
+[2025-06-30 17:49:47] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:46:26] Refresh link valid? False
+[2025-06-30 17:49:47] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:46:32] Refresh link valid? False
+[2025-06-30 17:49:47] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:46:38] Refresh link valid? False
+[2025-06-30 17:49:47] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:46:44] Refresh link valid? False
+[2025-06-30 17:49:54] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:46:51] Refresh link valid? False
+[2025-06-30 17:49:58] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:46:59] Refresh link valid? False
+[2025-06-30 17:49:58] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:06] Refresh link valid? False
+[2025-06-30 17:49:58] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:12] Refresh link valid? False
+[2025-06-30 17:49:58] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:18] Refresh link valid? False
+[2025-06-30 17:49:59] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:25] Refresh link valid? False
+[2025-06-30 17:50:05] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:31] Refresh link valid? False
+[2025-06-30 17:50:05] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:37] Refresh link valid? False
+[2025-06-30 17:50:05] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:44] Refresh link valid? False
+[2025-06-30 17:50:05] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:50] Refresh link valid? False
-[2025-06-30 17:47:52] (Scheduled) Error refreshing access token: 401 Client Error: Unauthorized for url: https://api.schwabapi.com/v1/oauth/token
+[2025-06-30 17:50:05] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:47:57] Refresh link valid? False
+[2025-06-30 17:50:05] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:48:03] Refresh link valid? False
+[2025-06-30 17:50:12] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:48:09] Refresh link valid? False
+[2025-06-30 17:50:12] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:48:15] Refresh link valid? False
+[2025-06-30 17:50:12] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:48:22] Refresh link valid? False
+[2025-06-30 17:50:13] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:48:28] Refresh link valid? False
+[2025-06-30 17:50:13] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:48:38] Refresh link valid? False
+[2025-06-30 17:50:13] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:48:45] Refresh link valid? False
+[2025-06-30 17:50:19] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:48:51] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:48:57] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:49:04] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:49:10] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:49:16] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:49:22] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
-[2025-06-30 17:49:28] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:19] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}2025-07-01 03:20:33.694 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:20:33.694 Thread 'Thread-4 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:21:04.380 Thread 'Thread-8 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:21:04.381 Thread 'Thread-8 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:21:04.381 Thread 'Thread-18 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-07-01 03:21:04.381 Thread 'Thread-18 (run_scheduler_loop)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+'Unauthorized'}
 [2025-06-30 17:49:34] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'} 'Unauthorized'}
 [2025-06-30 17:32:25] Refresh link valid? False
@@ -1823,4 +1805,106 @@ Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'er
 [2025-06-30 17:47:57] Refresh link valid? False
 Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
 [2025-06-30 17:48:03] Refresh link valid? False
-Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}client', 'error_description': 'Unauthorized'}
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:08] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:09] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:15] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:16] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:22] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:23] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:29] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:29] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:38] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:38] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:45] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:46] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:52] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:52] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:58] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:48:59] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:05] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:05] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:11] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:11] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:17] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:18] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:24] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:24] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:31] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:31] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:37] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:38] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:44] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:44] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:50] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:51] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:58] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:49:58] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:05] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:05] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:12] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:12] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:18] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:19] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:25] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:25] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:31] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:32] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:38] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:38] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:49] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:49] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:55] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:50:56] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
+[2025-06-30 17:51:03] Refresh link valid? False
+Error in getting refresh token = 'refresh_token' {'error': 'invalid_client', 'error_description': 'Unauthorized'}
