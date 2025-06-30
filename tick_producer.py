@@ -10,6 +10,9 @@ import logging
 import databento as db
 
 from utils import get_active_exchange_symbol
+import os
+from dotenv import load_dotenv
+load_dotenv()  # Load environment variables from .env
 
 class TickProducer:
     def __init__(self, redis_host='localhost', redis_port=6379, redis_db=0,db_api_key=None):
@@ -65,7 +68,7 @@ class TickProducer:
                     ticker=ticker_for_data,
                     tick_size=tick_size,
                     redis_client=self.redis_client,
-                    db_api_key="db-Fc8gmvsEVVTEpmchj6NLb6L68XmFH",
+                    db_api_key=os.getenv("DATABENTO_API_KEY"),
                     max_period=max_period
                 )
                 self.tick_buffers[ticker_for_data] = buffer
@@ -102,7 +105,7 @@ class TickProducer:
     async def start_live_feeds(self, live_symbols_config):
         """Start live data feeds"""
         if live_symbols_config:
-            self.live_manager = DatabentoLiveManager(db_api_key="db-Fc8gmvsEVVTEpmchj6NLb6L68XmFH")
+            self.live_manager = DatabentoLiveManager(db_api_key=os.getenv("DATABENTO_API_KEY"))
             self.logger.info(f"Starting live feeds for: {list(live_symbols_config.keys())}")
             await self.live_manager.start_live_feeds(live_symbols_config, self.tick_buffers)
 
@@ -160,6 +163,6 @@ if __name__ == "__main__":
     with open("jsons/tickers.json", "r") as file:
         tickers_config = json.load(file)
 
-    db_api_key = "db-Fc8gmvsEVVTEpmchj6NLb6L68XmFH"
+    db_api_key = os.getenv("DATABENTO_API_KEY")
     producer = TickProducer(db_api_key=db_api_key)
     producer.run(tickers_config)

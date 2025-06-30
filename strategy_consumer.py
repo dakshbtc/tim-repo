@@ -77,8 +77,10 @@ class StrategyConsumer:
 
             with open(trade_file_path, "r") as file:
                 trades = json.load(file)
+                
             # Get data based on timeframe type
-            ticker = get_active_exchange_symbol(ticker) if ticker.startswith("/") else ticker
+            ticker = f"{get_active_exchange_symbol(ticker).lstrip('/')}" if ticker.startswith("/") else ticker
+
             if is_tick_timeframe(time_frame):
 
                 logger.info(f"Using tick data for {ticker}")
@@ -130,29 +132,35 @@ class StrategyConsumer:
             if ticker not in trades.copy():
                 if Long_condition:
                     logger.info(f"Long condition triggered for {ticker}")
-                    order_id_schwab = place_order(ticker, schwab_qty, "BUY", account_id, logger, "OPENING") if schwab_qty > 0 else 0
+                    # order_id_schwab = place_order(ticker, schwab_qty, "BUY", account_id, logger, "OPENING") if schwab_qty > 0 else 0
+                    order_id_schwab = ""
                     order_id_tastytrade = place_tastytrade_order(ticker, tasty_qty, "Buy to Open", account_id, logger) if tasty_qty > 0 else 0
                     trades[ticker] = {"action": "LONG", "order_id_schwab": order_id_schwab, "order_id_tastytrade": order_id_tastytrade}
                 elif Short_condition:
                     logger.info(f"Short condition triggered for {ticker}")
-                    order_id_schwab = place_order(ticker, schwab_qty, "SELL_SHORT", account_id, logger, "OPENING") if schwab_qty > 0 else 0
+                    # order_id_schwab = place_order(ticker, schwab_qty, "SELL_SHORT", account_id, logger, "OPENING") if schwab_qty > 0 else 0
                     order_id_tastytrade = place_tastytrade_order(ticker, tasty_qty, "Sell to Open", account_id, logger) if tasty_qty > 0 else 0
+                    order_id_schwab = ""
                     trades[ticker] = {"action": "SHORT", "order_id_schwab": order_id_schwab, "order_id_tastytrade": order_id_tastytrade}
             else:
                 # Position reversal logic
                 if trades[ticker]["action"] == "LONG" and Short_condition:
                     logger.info(f"Reversing position for {ticker}: Closing LONG, opening SHORT")
-                    long_order_id_schwab = place_order(ticker, schwab_qty, "SELL", account_id, logger, "CLOSING") if schwab_qty > 0 else 0
+                    # long_order_id_schwab = place_order(ticker, schwab_qty, "SELL", account_id, logger, "CLOSING") if schwab_qty > 0 else 0
+                    long_order_id_schwab = ""
                     long_order_id_tastytrade = place_tastytrade_order(ticker, tasty_qty, "Sell to Close", account_id, logger) if tasty_qty > 0 else 0
-                    short_order_id_schwab = place_order(ticker, schwab_qty, "SELL_SHORT", account_id, logger, "OPENING") if schwab_qty > 0 else 0
+                    # short_order_id_schwab = place_order(ticker, schwab_qty, "SELL_SHORT", account_id, logger, "OPENING") if schwab_qty > 0 else 0
+                    short_order_id_schwab = ""
                     short_order_id_tastytrade = place_tastytrade_order(ticker, tasty_qty, "Sell to Open", account_id, logger) if tasty_qty > 0 else 0
                     trades[ticker] = {"action": "SHORT", "order_id_schwab": short_order_id_schwab, "order_id_tastytrade": short_order_id_tastytrade}
 
                 elif trades[ticker]["action"] == "SHORT" and Long_condition:
                     logger.info(f"Reversing position for {ticker}: Closing SHORT, opening LONG")
-                    short_order_id_schwab = place_order(ticker, schwab_qty, "BUY_TO_COVER", account_id, logger, "CLOSING") if schwab_qty > 0 else 0
+                    # short_order_id_schwab = place_order(ticker, schwab_qty, "BUY_TO_COVER", account_id, logger, "CLOSING") if schwab_qty > 0 else 0
+                    short_order_id_schwab = ""
                     short_order_id_tastytrade = place_tastytrade_order(ticker, tasty_qty, "Buy to Close", account_id, logger) if tasty_qty > 0 else 0
-                    long_order_id_schwab = place_order(ticker, schwab_qty, "BUY", account_id, logger, "OPENING") if schwab_qty > 0 else 0
+                    # long_order_id_schwab = place_order(ticker, schwab_qty, "BUY", account_id, logger, "OPENING") if schwab_qty > 0 else 0
+                    long_order_id_schwab = ""
                     long_order_id_tastytrade = place_tastytrade_order(ticker, tasty_qty, "Buy to Open", account_id, logger) if tasty_qty > 0 else 0
                     trades[ticker] = {"action": "LONG", "order_id_schwab": long_order_id_schwab, "order_id_tastytrade": long_order_id_tastytrade}
 
@@ -180,7 +188,6 @@ class StrategyConsumer:
                     # Parse the channel to get symbol
                     channel = message['channel'].decode('utf-8')
                     symbol = channel.split(':')[1]
-                    
                     # Parse bar data
                     bar_data = json.loads(message['data'].decode('utf-8'))
                     self.logger.info(f"Received new bar for {symbol}: close={bar_data['close']}")

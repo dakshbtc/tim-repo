@@ -103,6 +103,8 @@ def place_tastytrade_order(symbol, qty, action, account_id, logger):
                 symbol = "/" + symbol
             else:
                 symbol = "/" + df["exchange-symbol"].values[0]
+        if symbol[-1].isdigit():   #check for futrues contract if true add /
+            symbol = f"/{symbol.lstrip('/')}"
         order_payload = create_order_payload(symbol, qty, action, account_id, logger)
         order_id = place_order(order_payload, account_id, access_token, logger)
         is_filled, _ = check_order_status(order_id, account_id, access_token, logger)

@@ -165,3 +165,4 @@ cython_debug/
 
 test.py
 trader_bot_QQQ.py
+jsons/creds.json

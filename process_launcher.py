@@ -3,6 +3,7 @@ import os
 import sys
 from pathlib import Path
 import time
+
 def start_process(script_name, log_filename):
     """Start a Python script in a separate process and log its output."""
     log_file_path = Path(log_filename).resolve()
@@ -28,7 +29,10 @@ def main():
         producer_log = base_dir / "tick_producer.log"
         p1, f1 = start_process(str(producer_script), str(producer_log))
         processes.append((p1, f1))
-        
+
+        # Give TickProducer time to initialize
+        # time.sleep(30)  # <—— Add delay here
+
         # Start StrategyConsumer
         strategy_script = base_dir / "strategy_consumer.py"
         strategy_log = base_dir / "strategy_consumer.log"

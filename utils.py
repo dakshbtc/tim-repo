@@ -235,11 +235,9 @@ def sleep_until_next_interval(ticker, interval_minutes):
 
 def get_strategy_prarams(ticker, logger):
     try:
-        print(f"IN STARTEGY PARAMS")
         with open(tickers_path, "r") as file:
             strategy_params = json.load(file)
 
-        print(f"RETURN STRATEGY {strategy_params[ticker]}")
         return strategy_params[ticker]
     except Exception as e:
         logger.error(f"Error in getting strategy params: {str(e)}")
